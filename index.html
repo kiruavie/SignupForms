@@ -33,19 +33,19 @@
 
         <div class="signup-form">
           <h3>Let's do this!</h3>
-          <form>
+          <form id="myForm">
             <div class="form-left">
               <input
                 type="text"
                 id="first_name"
                 name="first_name"
-                placeholder="first name"
+                placeholder="First Name"
               />
               <input
                 type="email"
                 id="email"
                 name="email"
-                placeholder="email"
+                placeholder="Email"
                 required
               />
               <input
@@ -53,12 +53,12 @@
                 id="password"
                 name="password"
                 class="password"
-                placeholder="password"
+                placeholder="Password"
                 required
               />
               <button type="submit" id="signup-btn">Create Account</button>
               <div class="signin-page">
-                <p>Already have an account ?</p>
+                <p>Already have an account?</p>
                 <a href="#">Sign in</a>
               </div>
             </div>
@@ -67,25 +67,29 @@
                 type="text"
                 name="last_name"
                 id="last_name"
-                placeholder="last name"
+                placeholder="Last Name"
               />
               <input
                 type="text"
                 id="phone"
                 name="phone_number"
-                placeholder="phone number"
+                placeholder="Phone Number"
               />
               <input
                 type="password"
                 id="confirm_password"
                 name="confirm_password"
                 class="password"
-                placeholder="confirme password"
+                placeholder="Confirm Password"
               />
+              <p id="passwordError" style="color: red; display: none">
+                Passwords do not match
+              </p>
             </div>
           </form>
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
